@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400" rel="stylesheet">
+    </head>
+        <main>
+            <header>
+                <h1>Survey Form</h1>
+            </header>
+            <body>
+                <form autocomplete="on">
+                    <p id="survey-title">Let us know how we can improve freeCodeCamp</p>
+                    <div class="survey-question">* Name:</div> <input type="text" name="name" placeholder="Enter your name" size="40" autofocus required>
+                    <div class="survey-question">* Email:</div> <input type="email" name="email" placeholder="Enter your email" size="40" autofocus required>
+                    <div class="survey-question">* Age:</div> <input type="number" name="age" placeholder="Age" size="10" maxlength="3" autofocus required>
+                    <div class="survey-question">Which option best describes your current role?</div> <input list="role" name="role" placeholder="Please Select One">
+                        <datalist id="role">
+                            <option value="Student">
+                            <option value="Full Time Job">
+                            <option value="Full Time Learner">
+                            <option value="Prefer Not To Say">
+                            <option value="Other">
+                        </datalist> 
+                    <div class="survey-question">* How likely is that you would recommend freeCodeCamp to a friend?</div> 
+                        <div id="radio-group">
+                            <label class="radio"><input type="radio" name="recommend" value="definitely"> Definitely</label>
+                            <label class="radio"><input type="radio" name="recommend" value="maybe"> Maybe</label>
+                            <label class="radio"><input type="radio" name="recommend" value="not-sure"> Not Sure</label>
+                        </div>
+                    <div class="survey-question">What do you like most in FCC:</div>
+                    <div class="survey-question">Things that should be improved in the future (Check all that apply):</div>
+                    <div class="survey-question">Any Comments or Suggestions?</div>
+                    <div id="button"><input type="submit" value="Submit"></div>
+                </form>
+            </body>
+            <footer>
+
+            </footer>
+        </main>
+</html>
