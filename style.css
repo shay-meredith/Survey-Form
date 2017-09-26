@@ -5,6 +5,7 @@ body {
     font-weight: 300;
 }
 h1 {
+    color: white;
     font-size: 2em;
     font-weight: 400;
     text-align: center;
@@ -15,6 +16,7 @@ form {
     box-shadow: 2px 2px 5px #bdbdbd;
     display: block;
     margin: auto;
+    max-width: 90%;
 }
 #survey-title {
     text-align: center;
@@ -42,9 +44,33 @@ form {
     vertical-align: middle;
     width: 40%;
 }
-
+#option {
+    display: inline-block;
+    vertical-align: middle;
+}
+#checkboxContainer {
+    columns: 100px 2;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+}
+textarea {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 0px 10px 0px;
+}
 #button {
     background-color: #dd2c00;
+    border-radius: 5px;
+    color: white;
     display: block;
-    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: .8em;
+    font-weight: 300;
+    height: 30px;
+    line-height: 5px;
+    margin: 10px auto;
+    padding: 5px 5px;
+    width: 100px;
 }
