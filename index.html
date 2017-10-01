@@ -10,11 +10,11 @@
             </header>
             <body>
                 <form autocomplete="on">
-                    <p id="survey-title">Let us know how we can improve freeCodeCamp</p>
-                    <div class="survey-question">* Name:</div> <input type="text" name="name" placeholder="Enter your name" size="40" autofocus required>
-                    <div class="survey-question">* Email:</div> <input type="email" name="email" placeholder="Enter your email" size="40" autofocus required>
-                    <div class="survey-question">* Age:</div> <input type="text" name="age" placeholder="Age" size="40" maxlength="3" autofocus required>
-                    <div class="survey-question">Which option best describes your current role?</div> 
+                    <p id="surveyTitle">Let us know how we can improve freeCodeCamp</p>
+                    <div class="surveyQuestion"><div class="requiredSymbol">*</div> Name:</div> <input class="textBox" type="text" name="name" placeholder="Enter your name" size="40" autofocus required>
+                    <div class="surveyQuestion"><div class="requiredSymbol">*</div> Email:</div> <input class="textBox" type="email" name="email" placeholder="Enter your email" size="40" autofocus required>
+                    <div class="surveyQuestion"><div class="requiredSymbol">*</div> Age:</div> <input class="textBox" type="text" name="age" placeholder="Age" size="40" maxlength="3" autofocus required>
+                    <div class="surveyQuestion">Which option best describes your current role?</div> 
                         <select id="option">
                             <option value="Please Select One" selected="true" disabled>Please Select One</option>
                             <option value="Student">Student</option>
@@ -23,13 +23,13 @@
                             <option value="Prefer Not To Say">Prefer Not To Say</option>
                             <option value="Other">Other</option>
                             </select> 
-                    <div class="survey-question">* How likely is that you would recommend freeCodeCamp to a friend?</div> 
-                        <div id="radio-group">
+                    <div class="surveyQuestion"><div class="requiredSymbol">*</div> How likely is that you would recommend freeCodeCamp to a friend?</div> 
+                        <div id="radioGroup">
                             <label class="radio"><input type="radio" name="recommend" value="definitely"> Definitely</label><br>
                             <label class="radio"><input type="radio" name="recommend" value="maybe"> Maybe</label><br>
                             <label class="radio"><input type="radio" name="recommend" value="not-sure"> Not Sure</label><br>
                         </div>
-                    <div class="survey-question">What do you like most in FCC:</div>
+                    <div class="surveyQuestion">What do you like most in FCC:</div>
                     <select id="option">
                         <option value="Please Select One" selected="true" disabled>Please Select One</option>
                         <option value="Challenges">Challenges</option>
@@ -37,7 +37,7 @@
                         <option value="Community">Community</option>
                         <option value="Open Source">Open Source</option>
                         </select> 
-                    <div class="survey-question">Things that should be improved in the future <br> (Check all that apply):</div>
+                    <div class="surveyQuestion">Things that should be improved in the future <br> (Check all that apply):</div>
                     <div id="checkboxContainer">
                         <div class="checkbox">
                             <input type="checkbox" id="frontendProjects" name="Improvements" value="frontendProjects">
@@ -84,7 +84,7 @@
                             <label for="additionalCourses">Additional Courses</label>
                         </div>
                     </div>
-                    <div class="survey-question">Any Comments or Suggestions?</div>
+                    <div class="surveyQuestion">Any Comments or Suggestions?</div>
                     <textarea name="comments" rows="6" cols="40" placeholder="Enter your comment here..."></textarea>
                     <input type="submit" value="Submit" id="button"></div>
                 </form>
