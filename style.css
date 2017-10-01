@@ -1,22 +1,8 @@
 body {
     background-color: #4caf50;
     font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 300;
-}
-#button {
-    background-color: #dd2c00;
-    border-radius: 5px;
-    color: white;
-    display: block;
-    font-family: "Roboto", sans-serif;
-    font-size: .8em;
-    font-weight: 300;
-    height: 30px;
-    line-height: 5px;
-    margin: 10px auto;
-    padding: 5px 5px;
-    width: 100px;
 }
 .checkbox {
     display: inline-block;
@@ -30,23 +16,17 @@ body {
     width: 40%;
     vertical-align: top;
 }
+#description {
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+#dropdown {
+    display: inline-block;
+    vertical-align: middle;
+}
 footer {
     color: white;
     margin: 20px auto;
-    text-align: center;
-}
-form {
-    background-color: #fafafa;
-    border: 1px solid #757575;
-    box-shadow: 2px 2px 5px #bdbdbd;
-    display: block;
-    margin: auto;
-    width: 90%;
-}
-h1 {
-    color: white;
-    font-size: 2em;
-    font-weight: 400;
     text-align: center;
 }
 input {
@@ -56,10 +36,6 @@ input {
 label {
     display: inline-block;
     height: 25px;
-}
-#option {
-    display: inline-block;
-    vertical-align: middle;
 }
 .radio {
     display: inline-block;
@@ -81,10 +57,29 @@ label {
     vertical-align: top;
 }
 select {
+    font-size: 12px;
+}
+#submit {
+    background-color: #dd2c00;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: .8em;
+    font-weight: 300;
+    height: 30px;
+    line-height: 5px;
+    margin: 10px auto;
+    padding: 5px 5px;
+    width: 100px;
+}
+#survey-form {
     background-color: #fafafa;
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 5px;
+    border: 1px solid #757575;
+    box-shadow: 2px 2px 5px #bdbdbd;
+    display: block;
+    margin: auto;
+    width: 80%;
 }
 .surveyQuestion {
     display: inline-block;
@@ -94,25 +89,27 @@ select {
     vertical-align: middle;
     width: 50%;
 }
-#surveyTitle {
-    text-align: center;
-    margin: 10px 0px 20px 0px;
-}
 textarea {
     display: inline-block;
     margin: 10px 0px;
     width: 40%;
     vertical-align: middle;
 }
+#title {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
 
 @media screen and (max-width: 700px) {
     body {
-        font-size: 4vmin;
+        font-size: 3vmin;
         min-width: 600px;
     }
     #checkboxContainer {
         columns: 1;
-        margin: 5px 0px 10px 20px;
+        margin: 10px 0px 20px 20px;
     }
     h1 {
         font-size: 9vw;
@@ -123,10 +120,10 @@ textarea {
         max-width: 60%;
     }
     #option {
-        margin: 5px 0px 10px 40px;
+        margin: 10px 0px 20px 40px;
     }
     #radioGroup {
-        margin: 5px 0px 10px 30px;
+        margin: 10px 0px 20px 30px;
     }
     .surveyQuestion {
         display: block;
@@ -136,9 +133,9 @@ textarea {
         width: 90%;
     }
     textarea {
-        margin: 5px 0px 10px 40px;
+        margin: 10px 0px 20px 40px;
     }
     .textBox {
-        margin: 5px 0px 10px 40px;
+        margin: 10px 0px 20px 40px;
     } 
 }
